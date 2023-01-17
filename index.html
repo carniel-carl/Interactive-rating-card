@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Rating state start -->
+    <div class="card">
+      <div class="card-image">
+        <img src="images/icon-star.svg" aria-label="a star icon" aria-hidden="true" alt="">
+      </div>
+      <h1> How did we do?</h1>
+      <p class="card-text">Please let us know how we did with your support request. All feedback is appreciated to help
+        us improve our offering!</p>
+      <div class="rating-icons">
+        <ul>
+          <li><button class="rate">1</button></li>
+          <li><button class="rate">2</button></li>
+          <li><button class="rate">3</button></li>
+          <li><button class="rate">4</button></li>
+          <li><button class="rate">5</button></li>
+        </ul>
+      </div>
+
+      <button id="submit">Submit</button>
+    </div>
+    <!-- Rating state end -->
+
+
+    <!-- Thank you state start -->
+
+    <div class="card thank-you-card hidden">
+      <div>
+        <img src="images/illustration-thank-you.svg" aria-label="thank you illustration" aria-hidden="true" alt="">
+      </div>
+
+      <p class="rate-value">You selected <span id="rate-num">0</span> out of 5 </p>
+      <h1 class="thank-you-heading">Thank you!</h1>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+
+    </div>
+
+    <!-- Thank you state end -->
+
+
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /* ### Primary Colour */
+
+    --ORANGE: hsl(25, 97%, 53%);
+
+    /* ### Neutral  Colour */
+
+    --WHITE: hsl(0, 0%, 100%);
+    --LIGHT-GREY: hsl(217, 12%, 63%);
+    --MEDIUM-GREY: hsl(216, 12%, 54%);
+    --DARK-BLUE: hsl(213, 19%, 18%);
+    --VERY-DARK-BLUE: hsl(216, 12%, 8%);
+}
+
+/*  -----GLOBAL RESEST ------ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif; 
+    background-color: var(--VERY-DARK-BLUE);
+}
+
+p {
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.container {
+    min-height: 100vh;
+    color: var(--MEDIUM-GREY);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    max-width: 25rem;
+    padding: 2rem;
+    background: linear-gradient(var(--DARK-BLUE),hsl(213, 35%, 11%));
+    border-radius: 1.3rem;
+}
+
+.card-image {
+    margin-bottom: 1.2rem;
+    display: inline-block; 
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 10%); 
+
+}
+
+.card-image img {
+    padding: .7rem;
+    display: block;
+}
+
+h1 {
+    color: var(--WHITE);
+}
+
+.card-text {
+    margin: .8rem 0  1.4rem;
+}
+
+.rating-icons  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+    list-style-type: none;
+}
+
+.rate {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    color: inherit;
+}
+
+.rate:hover {
+    background-color: var(--ORANGE);
+    color: var(--WHITE);
+}
+
+.rate:focus {
+    background-color: var(--LIGHT-GREY);
+}
+
+button {
+    width: 100%;
+    font: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: none;
+    padding: 0.7rem 0;
+    border-radius: 1.9rem;
+    color: var(--WHITE);
+    background-color: var(--ORANGE);
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: var(--WHITE);
+    color: var(--ORANGE);
+}
+
+button:active {
+    filter: brightness(70%)
+}
+
+.hidden {
+    display: none;
+}
+
+.thank-you-card {
+    text-align: center;
+}
+
+.thank-you-heading {
+    margin-bottom: 0.5rem;
+}
+.rate-value {
+    display: inline-block;
+    color: var(--ORANGE);
+    background-color: hsla(216, 12%, 54%, 20%);
+    padding: .4rem .9rem .1rem;
+    border-radius: 1.9rem;
+    margin: 1.8rem 0 2rem;
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        margin: auto 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
