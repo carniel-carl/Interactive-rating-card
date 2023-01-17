@@ -56,7 +56,7 @@ p {
 }
 
 .card-image img {
-    padding: .7rem;
+    padding: .9rem;
     display: block;
 }
 
@@ -71,7 +71,8 @@ h1 {
 .rating-icons  ul {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     list-style-type: none;
 }
 
