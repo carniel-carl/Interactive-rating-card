@@ -95,6 +95,7 @@ h1 {
 
 .rate:focus {
     background-color: var(--LIGHT-GREY);
+    color: var(--WHITE);
 }
 
 button {
